@@ -8,7 +8,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      const res = await axios.post("https://myapiadmin.onrender.com/api/signup", {
+      const res = await axios.post("https://backendmyapiuser.onrender.com/api/signup", {
         username,
         password,
       });

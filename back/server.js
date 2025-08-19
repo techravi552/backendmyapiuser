@@ -34,6 +34,11 @@ app.post("/api/signup", async (req, res) => {
   }
 });
 
+app.get("/api/signup" , async (req , res)=>{
+    const user = await User.find()
+    res.send(user)
+})
+
 // Login
 app.post("/api/login", async (req, res) => {
   const { username, password } = req.body;
